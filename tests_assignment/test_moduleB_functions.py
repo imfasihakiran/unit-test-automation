@@ -1,5 +1,5 @@
 import pytest
-from maths.prime_check import prime_check
+from maths.prime_check import is_prime as prime_check
 from searches.binary_search import binary_search
 
 
