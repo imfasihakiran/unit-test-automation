@@ -1,0 +1,11 @@
+test_id,limit,pushes,operation,expected
+TC01,3,1;2;3,pop,3
+TC02,3,1;2;3,peek,3
+TC03,3,1;2;3,size,3
+TC04,3,1;2;3,is_full,True
+TC05,3,1,is_empty,False
+TC06,3,,is_empty,True
+TC07,3,,pop,UNDERFLOW
+TC08,3,,peek,UNDERFLOW
+TC09,2,1;2;3,push_overflow,OVERFLOW
+TC10,3,5;6,size,2
