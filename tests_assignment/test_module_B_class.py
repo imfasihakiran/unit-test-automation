@@ -28,8 +28,9 @@ def test_prime_check_boundary_one():
 @pytest.mark.order(60)
 @pytest.mark.parametrize("invalid_val", [-1, -5, -10, -99])
 def test_prime_check_negative_numbers(invalid_val):
-    # ECP: Negative numbers equivalence class
-    assert prime_check(invalid_val) is False
+    # ECP: Negative numbers equivalence class raises ValueError
+    with pytest.raises(ValueError):
+        prime_check(invalid_val)
 
 
 # ==========================================
